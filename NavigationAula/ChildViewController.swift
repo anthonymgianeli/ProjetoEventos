@@ -9,14 +9,29 @@
 import UIKit
 
 class ChildViewController: BaseViewController {
+    var text: String?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var myLabel: UILabel!
+    
+    override var myOutlet: UIView? {
+        get {
+            return myLabel
+        }
     }
     
-
+    override var name: String {
+        get {
+            return "Child View Controller"
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.myLabel.text = text
+    }
+    
+    
     /*
     // MARK: - Navigation
 

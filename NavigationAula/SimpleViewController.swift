@@ -7,15 +7,40 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class SimpleViewController: BaseViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var myLabel: UILabel!
+    
+    override var myOutlet: UIView? {
+        get {
+            return myLabel
+        }
     }
     
+    override var name: String {
+        get {
+            return "Simple View Controller"
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        post()
+    }
+    
+        func post (){
+            let title = "firebase"
+            let subtitle = "ola"
+    
+            let post :[String: AnyObject] = ["title" : title as AnyObject, "subtitle" : subtitle as AnyObject]
+    
+            let dbReference = Database.database().reference()
+            dbReference.child("Posts").childByAutoId().setValue(post)
+        }
 
     /*
     // MARK: - Navigation

@@ -9,14 +9,39 @@
 import UIKit
 
 class RootViewController: BaseViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    @IBOutlet weak var myLabel: UILabel!
+    
+    
+    override var myOutlet: UIView? {
+        get {
+            return myLabel
+        }
     }
     
+    override var name: String {
+        get {
+            return "Root View Controller"
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //print("O view controller é \(self)")
+    }
+    
+    @IBAction func hereAndBackAgain(_ segue: UIStoryboardSegue) {
+        
+    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "gotoNext" {
+            if let destination = segue.destination as? ChildViewController {
+                destination.text = "Setei um valor"
+            }
+        }
+    }
     /*
     // MARK: - Navigation
 
