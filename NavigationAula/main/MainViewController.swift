@@ -13,7 +13,6 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
     
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var imagesemanais: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
      @IBOutlet weak var myLabel: UILabel!
@@ -28,10 +27,20 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
     var slides: [UIImage] = []
     var frame = CGRect(x:0,y:0,width: 0,height: 0)
     
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        loadScrollView()
+    @objc func button1Tapped(_ sender: UIButton) {
+        print("button1Tapped")
+    }
+    @objc func button2Tapped(_ sender: UIButton) {
+        print("button2Tapped")
+    }
+    @objc func button3Tapped(_ sender: UIButton) {
+        print("button3Tapped")
+    }
+    @objc func button4Tapped(_ sender: UIButton) {
+        print("button4Tapped")
+    }
+    @objc func button5Tapped(_ sender: UIButton) {
+        print("button6Tapped")
     }
     
     override func viewDidLoad() {
@@ -67,26 +76,45 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
             imagens.append(imagem)
         }
         
-        //slides
-        if let slide = UIImage(named: "imagem1"){
-            slides.append(slide)
-        }
-        if let slide = UIImage(named: "imagem2"){
-            slides.append(slide)
-        }
-        if let slide = UIImage(named: "imagem3"){
-            slides.append(slide)
-        }
-        if let slide = UIImage(named: "imagem4"){
-            slides.append(slide)
-        }
-        if let slide = UIImage(named: "imagem5"){
-            slides.append(slide)
-        }
-        
-        
         tableView.delegate = self
         tableView.dataSource = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let size = scrollView.frame.size
+        let origin = CGPoint.zero
+        let frame = CGRect(origin: origin, size: size)
+        
+        
+        
+        let button = UIButton(type: .custom)
+        button.frame = frame
+        button.setBackgroundImage(UIImage(named: "imagem1"), for: .normal)
+        button.addTarget(self, action: #selector(button1Tapped(_:)), for: .touchUpOutside)
+        
+         scrollView.addSubview(button)
+        
+        let button2 = UIButton(type: .custom)
+        button2.frame = frame.offsetBy(dx: size.width, dy: 0)
+        button2.setBackgroundImage(UIImage(named: "imagem2"), for: .normal)
+        button2.addTarget(self, action: #selector(button2Tapped(_:)), for: .touchUpOutside)
+        
+        scrollView.addSubview(button2)
+        
+        let button3 = UIButton(type: .custom)
+        button3.frame = frame.offsetBy(dx: size.width * 2, dy: 0)
+        button3.setBackgroundImage(UIImage(named: "imagem3"), for: .normal)
+        button3.addTarget(self, action: #selector(button3Tapped(_:)), for: .touchUpOutside)
+        
+        scrollView.addSubview(button3)
+        
+        scrollView.contentSize = CGSize(width: size.width * 3, height: size.height)
+        scrollView.delegate = self
+        
+        scrollView.setContentOffset(CGPoint.zero, animated: true)
+        scrollView.isPagingEnabled = true
     }
     
     //TableView settings
@@ -126,29 +154,8 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
         //uso está sendo apenas visual
         pageControl.numberOfPages = slides.count
         pageControl.currentPage = 0
-        
-        //resetar subviews existentes
-        let subviews = self.scrollView.subviews
-        for subview in subviews {
-            subview.removeFromSuperview()
-        }
-        
-        //preparar subview
-        for index in 0..<slides.count {
-            frame.origin.x = scrollView.frame.size.width * CGFloat(index)
-            frame.size = scrollView.frame.size
-            
-            let imgView = UIImageView(frame: frame)
-            
-            self.scrollView.addSubview(imgView)
-        }
-        
-        scrollView.contentSize = CGSize(width: scrollView.frame.size.width * CGFloat(slides.count), height: scrollView.frame.size.height)
-        scrollView.delegate = self
-        
-        scrollView.setContentOffset(CGPoint.zero, animated: true)
     }
-    
+    // fim 
    
     
     
@@ -172,7 +179,7 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
     }
     
     @IBAction func hereAndBackAgain(_ segue: UIStoryboardSegue) {
-        
+        self.performSegue(withIdentifier: "entrarSegue", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

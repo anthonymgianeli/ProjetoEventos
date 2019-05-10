@@ -53,7 +53,7 @@ class LoginViewController: BaseViewController {
                     // check that isn`t nil
                     if let u = user {
                         // user is found, go to home screen
-                        self.performSegue(withIdentifier: "goToHome", sender: self)
+                        self.performSegue(withIdentifier: "entrarHome", sender: self)
                     }
                     else {
                         // error: check error and show message
@@ -68,7 +68,7 @@ class LoginViewController: BaseViewController {
                     // check that isn`t nil
                     if let u = user {
                         // user is found, go to home screen
-                        self.performSegue(withIdentifier: "goToComplemento", sender: self)
+                        self.performSegue(withIdentifier: "entrarCadastro", sender: self)
                     }
                     else {
                         // error: check error and show message
