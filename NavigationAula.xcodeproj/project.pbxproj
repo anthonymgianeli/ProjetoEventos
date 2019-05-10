@@ -14,11 +14,12 @@
 		155BE229228060D200A0DC20 /* NavigationAulaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155BE228228060D200A0DC20 /* NavigationAulaTests.swift */; };
 		155BE234228060D300A0DC20 /* NavigationAulaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155BE233228060D300A0DC20 /* NavigationAulaUITests.swift */; };
 		155BE242228069A400A0DC20 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155BE241228069A400A0DC20 /* BaseViewController.swift */; };
-		155BE24422806B6000A0DC20 /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155BE24322806B6000A0DC20 /* SimpleViewController.swift */; };
+		155BE24422806B6000A0DC20 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155BE24322806B6000A0DC20 /* PerfilViewController.swift */; };
 		155BE24622806C5800A0DC20 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155BE24522806C5800A0DC20 /* MainViewController.swift */; };
 		155BE24A22806D5A00A0DC20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155BE24922806D5A00A0DC20 /* LaunchScreen.storyboard */; };
-		155BE24C2280791D00A0DC20 /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155BE24B2280791D00A0DC20 /* ChildViewController.swift */; };
+		155BE24C2280791D00A0DC20 /* DetalhesEventosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155BE24B2280791D00A0DC20 /* DetalhesEventosViewController.swift */; };
 		3C715D092284B048005713EA /* CellEventos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C715D082284B048005713EA /* CellEventos.swift */; };
+		3C715D102285219B005713EA /* CompraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C715D0F2285219B005713EA /* CompraViewController.swift */; };
 		3CEF49792283586800AAE249 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF49782283586800AAE249 /* GoogleService-Info.plist */; };
 		3CEF497B2283615900AAE249 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF497A2283615900AAE249 /* LoginViewController.swift */; };
 		3CEF497D2283716300AAE249 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF497C2283716300AAE249 /* CadastroViewController.swift */; };
@@ -56,14 +57,15 @@
 		155BE233228060D300A0DC20 /* NavigationAulaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAulaUITests.swift; sourceTree = "<group>"; };
 		155BE235228060D300A0DC20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		155BE241228069A400A0DC20 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		155BE24322806B6000A0DC20 /* SimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewController.swift; sourceTree = "<group>"; };
+		155BE24322806B6000A0DC20 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		155BE24522806C5800A0DC20 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		155BE24922806D5A00A0DC20 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		155BE24B2280791D00A0DC20 /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
+		155BE24B2280791D00A0DC20 /* DetalhesEventosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesEventosViewController.swift; sourceTree = "<group>"; };
 		2958BBF845AB92A121C784B8 /* Pods_NavigationAulaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavigationAulaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36BD3EAAA3D8FC63A294317D /* Pods-NavigationAulaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationAulaUITests.release.xcconfig"; path = "Target Support Files/Pods-NavigationAulaUITests/Pods-NavigationAulaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		38C1542EE6B79F3053A5E9E6 /* Pods_NavigationAulaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavigationAulaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C715D082284B048005713EA /* CellEventos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellEventos.swift; sourceTree = "<group>"; };
+		3C715D0F2285219B005713EA /* CompraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompraViewController.swift; sourceTree = "<group>"; };
 		3CEF49782283586800AAE249 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3CEF497A2283615900AAE249 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3CEF497C2283716300AAE249 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
@@ -130,15 +132,12 @@
 			children = (
 				155BE213228060D100A0DC20 /* AppDelegate.swift */,
 				155BE241228069A400A0DC20 /* BaseViewController.swift */,
-				155BE24522806C5800A0DC20 /* MainViewController.swift */,
-				3C715D082284B048005713EA /* CellEventos.swift */,
-				3CEF497A2283615900AAE249 /* LoginViewController.swift */,
-				3CEF497C2283716300AAE249 /* CadastroViewController.swift */,
-				155BE24322806B6000A0DC20 /* SimpleViewController.swift */,
-				155BE24B2280791D00A0DC20 /* ChildViewController.swift */,
+				3C715D0D22851FC2005713EA /* LoginCadastro */,
+				3C715D0C22851F6D005713EA /* main */,
+				3C715D0E2285210D005713EA /* Compra */,
 				155BE217228060D100A0DC20 /* Main.storyboard */,
-				155BE21A228060D200A0DC20 /* Assets.xcassets */,
 				155BE24922806D5A00A0DC20 /* LaunchScreen.storyboard */,
+				155BE21A228060D200A0DC20 /* Assets.xcassets */,
 				155BE21F228060D200A0DC20 /* Info.plist */,
 				3CEF49782283586800AAE249 /* GoogleService-Info.plist */,
 			);
@@ -171,6 +170,34 @@
 				2958BBF845AB92A121C784B8 /* Pods_NavigationAulaUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C715D0C22851F6D005713EA /* main */ = {
+			isa = PBXGroup;
+			children = (
+				155BE24522806C5800A0DC20 /* MainViewController.swift */,
+				155BE24B2280791D00A0DC20 /* DetalhesEventosViewController.swift */,
+				3C715D082284B048005713EA /* CellEventos.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		3C715D0D22851FC2005713EA /* LoginCadastro */ = {
+			isa = PBXGroup;
+			children = (
+				3CEF497A2283615900AAE249 /* LoginViewController.swift */,
+				3CEF497C2283716300AAE249 /* CadastroViewController.swift */,
+				155BE24322806B6000A0DC20 /* PerfilViewController.swift */,
+			);
+			path = LoginCadastro;
+			sourceTree = "<group>";
+		};
+		3C715D0E2285210D005713EA /* Compra */ = {
+			isa = PBXGroup;
+			children = (
+				3C715D0F2285219B005713EA /* CompraViewController.swift */,
+			);
+			path = Compra;
 			sourceTree = "<group>";
 		};
 		8D553047BD9C5035322AB20A /* Pods */ = {
@@ -437,10 +464,11 @@
 				3CEF497B2283615900AAE249 /* LoginViewController.swift in Sources */,
 				155BE24622806C5800A0DC20 /* MainViewController.swift in Sources */,
 				155BE214228060D100A0DC20 /* AppDelegate.swift in Sources */,
-				155BE24422806B6000A0DC20 /* SimpleViewController.swift in Sources */,
+				155BE24422806B6000A0DC20 /* PerfilViewController.swift in Sources */,
 				155BE242228069A400A0DC20 /* BaseViewController.swift in Sources */,
+				3C715D102285219B005713EA /* CompraViewController.swift in Sources */,
 				3CEF497D2283716300AAE249 /* CadastroViewController.swift in Sources */,
-				155BE24C2280791D00A0DC20 /* ChildViewController.swift in Sources */,
+				155BE24C2280791D00A0DC20 /* DetalhesEventosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

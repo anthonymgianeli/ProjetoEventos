@@ -160,7 +160,7 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
     
     override var name: String {
         get {
-            return "Root View Controller"
+            return "Main View Controller"
         }
     }
     
@@ -177,8 +177,7 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "gotoNext" {
-            if let destination = segue.destination as? ChildViewController {
-                destination.text = "Setei um valor"
+            if segue.destination is DetalhesEventosViewController {
             }
         }
     }

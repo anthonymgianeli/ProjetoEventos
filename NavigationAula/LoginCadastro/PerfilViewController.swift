@@ -1,5 +1,5 @@
 //
-//  ChildViewController.swift
+//  SimpleViewController.swift
 //  NavigationAula
 //
 //  Created by Luma Gabino Vasconcelos on 06/05/19.
@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
-class ChildViewController: BaseViewController {
-    var text: String?
+class PerfilViewController: BaseViewController {
 
     @IBOutlet weak var myLabel: UILabel!
     
@@ -21,17 +22,26 @@ class ChildViewController: BaseViewController {
     
     override var name: String {
         get {
-            return "Child View Controller"
+            return "Simple View Controller"
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        self.myLabel.text = text
+        post()
     }
     
+        func post (){
+            let title = "firebase"
+            let subtitle = "ola"
     
+            let post :[String: AnyObject] = ["title" : title as AnyObject, "subtitle" : subtitle as AnyObject]
+    
+            let dbReference = Database.database().reference()
+            dbReference.child("Posts").childByAutoId().setValue(post)
+        }
+
     /*
     // MARK: - Navigation
 

@@ -123,7 +123,7 @@
         <!--Perfil-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SimpleViewController" customModule="NavigationAula" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PerfilViewController" customModule="NavigationAula" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -337,7 +337,7 @@
                                 <rect key="frame" x="0.0" y="397" width="414" height="499"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellIdentifier" rowHeight="134" id="2h0-Or-9MU" userLabel="CellIndentifier" customClass="CellEventos" customModule="NavigationAula" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellIdentifier" rowHeight="134" id="2h0-Or-9MU" userLabel="CellIndentifier" customClass="CellEventos" customModule="NavigationAula" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55.5" width="414" height="134"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2h0-Or-9MU" id="PUr-1C-vUY">
@@ -443,7 +443,7 @@
         <!--Detalhes dos Eventos-->
         <scene sceneID="VB3-os-lZy">
             <objects>
-                <viewController id="HfS-Dq-obX" customClass="ChildViewController" customModule="NavigationAula" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HfS-Dq-obX" customClass="DetalhesEventosViewController" customModule="NavigationAula" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xBd-nV-TwP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -602,10 +602,10 @@
             </objects>
             <point key="canvasLocation" x="219" y="-1252"/>
         </scene>
-        <!--View Controller-->
+        <!--Compra View Controller-->
         <scene sceneID="ngU-ZS-A8c">
             <objects>
-                <viewController id="wa0-TY-BnB" sceneMemberID="viewController">
+                <viewController id="wa0-TY-BnB" customClass="CompraViewController" customModule="NavigationAula" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s6g-ai-88x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
