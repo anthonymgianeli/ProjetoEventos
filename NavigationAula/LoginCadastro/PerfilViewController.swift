@@ -3,7 +3,7 @@
 //  NavigationAula
 //
 //  Created by Luma Gabino Vasconcelos on 06/05/19.
-//  Copyright © 2019 Luma Gabino Vasconcelos. All rights reserved.
+//  Copyright © 2019 Anthony Marques Gianeli. All rights reserved.
 //
 
 import UIKit
@@ -35,9 +35,9 @@ class PerfilViewController: BaseViewController {
         func post (){
             let title = "firebase"
             let subtitle = "ola"
-    
+
             let post :[String: AnyObject] = ["title" : title as AnyObject, "subtitle" : subtitle as AnyObject]
-    
+
             let dbReference = Database.database().reference()
             dbReference.child("Posts").childByAutoId().setValue(post)
         }

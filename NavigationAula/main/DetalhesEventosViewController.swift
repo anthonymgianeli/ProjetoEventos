@@ -3,34 +3,59 @@
 //  NavigationAula
 //
 //  Created by Luma Gabino Vasconcelos on 06/05/19.
-//  Copyright © 2019 Luma Gabino Vasconcelos. All rights reserved.
+//  Copyright © 2019 Anthony Marques Gianeli. All rights reserved.
 //
 
 import UIKit
 
 class DetalhesEventosViewController: BaseViewController {
     var text: String?
-
-    @IBOutlet weak var myLabel: UILabel!
+    var image : UIImage?
     
-    override var myOutlet: UIView? {
-        get {
-            return myLabel
+    @IBOutlet weak var informacao: UILabel!
+    @IBOutlet weak var descricao: UILabel!
+    @IBOutlet weak var imagem: UIImageView!
+    @IBOutlet weak var signButton: UIButton!
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        imagem.image = image
+        signButton.layer.cornerRadius = 20
+        signButton.clipsToBounds = true
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    override var name: String{
+        get{
+            return "MainViewController"
         }
     }
     
-    override var name: String {
-        get {
-            return "Child View Controller"
+    override var myOutlet: UIView? {
+        get{
+            return descricao
         }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.myLabel.text = text
+        descricao.text = text
     }
-    
+        
     
     /*
     // MARK: - Navigation

@@ -3,7 +3,7 @@
 //  NavigationAula
 //
 //  Created by anthony gianeli on 09/05/19.
-//  Copyright © 2019 Luma Gabino Vasconcelos. All rights reserved.
+//  Copyright © 2019 Anthony Marques Gianeli. All rights reserved.
 //
 
 import UIKit

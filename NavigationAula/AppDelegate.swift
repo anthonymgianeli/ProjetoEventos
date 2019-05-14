@@ -3,12 +3,24 @@
 //  NavigationAula
 //
 //  Created by Luma Gabino Vasconcelos on 06/05/19.
-//  Copyright © 2019 Luma Gabino Vasconcelos. All rights reserved.
+//  Copyright © 2019 Anthony Marques Gianeli. All rights reserved.
 //
 
 import UIKit
 import Firebase
 import FirebaseDatabase
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
