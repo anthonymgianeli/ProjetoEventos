@@ -26,6 +26,7 @@
 		58AD4C0B4149A732A5720783 /* Pods_NavigationAula.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6624D48804F299C285A556 /* Pods_NavigationAula.framework */; };
 		B695BE71DE357BAC2999FFBE /* Pods_NavigationAulaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2958BBF845AB92A121C784B8 /* Pods_NavigationAulaUITests.framework */; };
 		BAD6E2BB2308AE8900A70264 /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD6E2BA2308AE8900A70264 /* Perfil.storyboard */; };
+		BAD6E2BD2308B57800A70264 /* MentorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD6E2BC2308B57800A70264 /* MentorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		8F43543B9046CDE607449C30 /* Pods-NavigationAulaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationAulaTests.debug.xcconfig"; path = "Target Support Files/Pods-NavigationAulaTests/Pods-NavigationAulaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD6624D48804F299C285A556 /* Pods_NavigationAula.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavigationAula.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD6E2BA2308AE8900A70264 /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
+		BAD6E2BC2308B57800A70264 /* MentorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +137,7 @@
 				155BE213228060D100A0DC20 /* AppDelegate.swift */,
 				155BE241228069A400A0DC20 /* BaseViewController.swift */,
 				3C715D0D22851FC2005713EA /* LoginCadastro */,
-				3C715D0C22851F6D005713EA /* main */,
+				3C715D0C22851F6D005713EA /* Controllers */,
 				3C715D0E2285210D005713EA /* Compra */,
 				155BE217228060D100A0DC20 /* Main.storyboard */,
 				BAD6E2BA2308AE8900A70264 /* Perfil.storyboard */,
@@ -175,14 +177,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3C715D0C22851F6D005713EA /* main */ = {
+		3C715D0C22851F6D005713EA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				155BE24522806C5800A0DC20 /* MainViewController.swift */,
 				155BE24B2280791D00A0DC20 /* DetalhesEventosViewController.swift */,
 				3C715D082284B048005713EA /* CellEventos.swift */,
+				BAD6E2BC2308B57800A70264 /* MentorViewController.swift */,
 			);
-			path = main;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		3C715D0D22851FC2005713EA /* LoginCadastro */ = {
@@ -467,6 +470,7 @@
 				3C715D092284B048005713EA /* CellEventos.swift in Sources */,
 				3CEF497B2283615900AAE249 /* LoginViewController.swift in Sources */,
 				155BE24622806C5800A0DC20 /* MainViewController.swift in Sources */,
+				BAD6E2BD2308B57800A70264 /* MentorViewController.swift in Sources */,
 				155BE214228060D100A0DC20 /* AppDelegate.swift in Sources */,
 				155BE24422806B6000A0DC20 /* PerfilViewController.swift in Sources */,
 				155BE242228069A400A0DC20 /* BaseViewController.swift in Sources */,
@@ -641,7 +645,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B8QFK7C948;
+				DEVELOPMENT_TEAM = NQW9RC6R9A;
 				INFOPLIST_FILE = NavigationAula/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -660,7 +664,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B8QFK7C948;
+				DEVELOPMENT_TEAM = NQW9RC6R9A;
 				INFOPLIST_FILE = NavigationAula/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
