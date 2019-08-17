@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Perfil-->
+        <scene sceneID="N7v-k3-CDR">
+            <objects>
+                <navigationController storyboardIdentifier="Perfil" title="Perfil" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lUc-Wm-oEX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Perfil" image="do-utilizador 20x20" selectedImage="do-utilizador 20x20" id="ArL-2i-stU"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0ca-bX-WML">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.29803921570000003" green="0.10980392160000001" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RlU-Hw-fVz" kind="relationship" relationship="rootViewController" id="Sgj-uq-Zx1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tiv-qV-lfo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="367" y="-204"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="X71-t0-VAE">
+            <objects>
+                <viewController id="RlU-Hw-fVz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VbP-xr-UBg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.85490196939999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="B2u-Xz-Bfj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yI9-6h-dgI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fhd-ze-EYY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1459" y="-204"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="do-utilizador 20x20" width="20" height="20"/>
+    </resources>
+</document>
