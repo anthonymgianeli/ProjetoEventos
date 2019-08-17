@@ -576,7 +576,7 @@
         <scene sceneID="8WI-6B-GCy">
             <objects>
                 <navigationController id="lid-tY-zz5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Agendar" id="LLm-bu-fHA"/>
+                    <tabBarItem key="tabBarItem" title="Agendar" image="agendamento" id="LLm-bu-fHA"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DHK-YD-8Yu">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -597,7 +597,7 @@
         <scene sceneID="lmL-3g-Xmh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="uCN-hi-9OH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Treinamentos" image="festa-2 20x20" id="FFb-x6-AGS"/>
+                    <tabBarItem key="tabBarItem" title="Treinamentos" image="treinamento" id="FFb-x6-AGS"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vvg-vj-fud">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -626,7 +626,7 @@
         <scene sceneID="diX-tR-rN8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gB0-wL-7fl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Mentoria" image="ingressos-de-cinema 20x20" id="1ur-Tq-Rf9"/>
+                    <tabBarItem key="tabBarItem" title="Mentoria" image="mentor" id="1ur-Tq-Rf9"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mj4-A7-zK4">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -657,9 +657,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="agendamento" width="20" height="20"/>
         <image name="background" width="207" height="448"/>
-        <image name="festa-2 20x20" width="20" height="20"/>
-        <image name="ingressos-de-cinema 20x20" width="20" height="20"/>
+        <image name="mentor" width="20" height="20"/>
+        <image name="treinamento" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="bA8-jR-qMp"/>
