@@ -124,7 +124,7 @@
         <!--Preciso de um Mentor-->
         <scene sceneID="1wx-j1-nX7">
             <objects>
-                <viewController id="7GI-Gd-3u9" sceneMemberID="viewController">
+                <viewController id="7GI-Gd-3u9" customClass="MentorViewController" customModule="NavigationAula" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xgd-tT-hrO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
