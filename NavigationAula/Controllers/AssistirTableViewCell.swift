@@ -1,19 +1,16 @@
 //
-//  MentorTableViewCell.swift
+//  AssistirTableViewCell.swift
 //  NavigationAula
 //
-//  Created by João Victor Batista on 17/08/19.
+//  Created by João Victor Batista on 18/08/19.
 //  Copyright © 2019 Luma Gabino Vasconcelos. All rights reserved.
 //
 
 import UIKit
 
-class MentorTableViewCell: UITableViewCell {
-    
-    @IBOutlet weak var thumb: UIImageView!
-    @IBOutlet weak var curso: UILabel!
-    @IBOutlet weak var autor: UILabel!
-    @IBOutlet weak var play: UIImageView!
+class AssistirTableViewCell: UITableViewCell {
+
+    @IBOutlet weak var area: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

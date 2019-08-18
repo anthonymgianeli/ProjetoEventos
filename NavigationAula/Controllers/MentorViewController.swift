@@ -13,45 +13,32 @@ class MentorViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var tableView: UITableView!
     
-    var sections = ["Desenvolvimento", "Design", "Financeiro", "Relacionamento Interpessoal"]
+    var courses = ["Desenvolvimento", "Sistema Interno", "Financeiro", "Relacionamento Interpessoal"]
     
-    var people    = [["João Victor Batista", "Arthur Rodrigues", "Jéssica Pereira"], ["Kewin Lima"], ["Vinicius Oliviera", "Gabriela Resende"], ["Marcela Barros", "Mônica Sousa"]]
+    var people    = ["Por João Victor", "Por Arthur", "Por Anthony", "Por Kewin"]
     
-    var info = [["Tenho tido algumas dificuldades na hora de tratar requisições no backend", "Gostaria de ajuda para desenvolver melhor arquivos css", "Preciso de sugestões de como treinar uma rede neural para resultados mais precisos"],["Tenho tido algumas dificuldades na hora de tratar requisições no backend"],["","",],["",""]]
     
-    var image = UIImage(named: "seta")
+    var image = UIImage(named: "play-button-2")
     
+    var thumbs = [UIImage(named: ""),UIImage(named: ""),UIImage(named: ""),UIImage(named: "")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
-
-
-    }
-
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return sections.count
-    }
-    
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if self.tableView(tableView, numberOfRowsInSection: section) > 0 {
-            return sections[section]
-        } else {
-            return nil
-        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return people[section].count
+        return courses.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Mentoria", for: indexPath) as! MentorTableViewCell
-        cell.name.text = people[indexPath.section][indexPath.row]
-        cell.info.text = info[indexPath.section][indexPath.row]
-        cell.img.image = image
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Curso", for: indexPath) as! MentorTableViewCell
+        cell.curso.text = courses[indexPath.row]
+        cell.autor.text = people[indexPath.row]
+        cell.play.image = image
+        cell.thumb.image = thumbs[indexPath.row]
         return cell
     }
     
