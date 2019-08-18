@@ -11,6 +11,7 @@ import UIKit
 class MentorViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     
     var courses = ["Desenvolvimento", "Sistema Interno", "Financeiro", "Relacionamento Interpessoal"]
@@ -18,7 +19,8 @@ class MentorViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var people    = ["Por João Victor", "Por Arthur", "Por Anthony", "Por Kewin"]
     
     
-    var image = UIImage(named: "play-button-2")
+    var play = UIImage(named: "play-button-2")
+    var completed = UIImage(named: "Grupo 173")
     
     var thumbs = [UIImage(named: ""),UIImage(named: ""),UIImage(named: ""),UIImage(named: "")]
     
@@ -35,13 +37,29 @@ class MentorViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Curso", for: indexPath) as! MentorTableViewCell
-        cell.curso.text = courses[indexPath.row]
-        cell.autor.text = people[indexPath.row]
-        cell.play.image = image
-        cell.thumb.image = thumbs[indexPath.row]
+
+        
+        if segmentedControl.selectedSegmentIndex == 0 {
+            cell.curso.text = courses[indexPath.row]
+            cell.autor.text = people[indexPath.row]
+            cell.thumb.image = thumbs[indexPath.row]
+            cell.play.image = play
+            cell.progress.progress = 0.5
+
+        } else {
+            cell.curso.text = courses[indexPath.row]
+            cell.autor.text = people[indexPath.row]
+            cell.thumb.image = thumbs[indexPath.row]
+            cell.play.image = completed
+            cell.progress.progress = 1.0
+        }
+        
         return cell
     }
     
+    @IBAction func valueChanged(_ sender: Any) {
+        tableView.reloadData()
+    }
     
     
 }

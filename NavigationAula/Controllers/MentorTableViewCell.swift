@@ -14,6 +14,7 @@ class MentorTableViewCell: UITableViewCell {
     @IBOutlet weak var curso: UILabel!
     @IBOutlet weak var autor: UILabel!
     @IBOutlet weak var play: UIImageView!
+    @IBOutlet weak var progress: UIProgressView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -14,7 +14,7 @@ class PerfilViewController: BaseViewController {
 
     
     var labelAtCell = ["Loja de Recompensas", "Meu Histórico", "Notificações",
-                       "Configurações", "Ajuda", "Quero ser instrutor!", "Sair  da Conta"]
+                       "Configurações", "Ajuda", "Quero ser instrutor!", "Sair da Conta"]
     
     @IBOutlet weak var tableView: UITableView!
     

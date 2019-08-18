@@ -10,12 +10,20 @@ import UIKit
 
 class AssistirTableViewController: UITableViewController {
 
-    var areas = ["Recursos Humanos","Desenvolvimento","Gestão","Financeiro","Marketing","Design"]
-
+    var areas = ["Recursos Humanos","Desenvolvimento","Gestão","Financeiro","Marketing","Design","Institucional","Administrativo"]
+    var areasFiltered = ["Recursos Humanos","Desenvolvimento","Gestão","Financeiro","Marketing","Design","Institucional","Administrativo"]
+    
+    let searchController = UISearchController(searchResultsController: nil)
+    var searching = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Pesquisar treinamentos"
+        navigationItem.searchController = searchController
+        definesPresentationContext = false
     }
 
     // MARK: - Table view data source
@@ -35,8 +43,43 @@ class AssistirTableViewController: UITableViewController {
         cell.area.text = areas[indexPath.row]
         return cell
     }
- 
 
+}
+
+extension AssistirTableViewController: UISearchBarDelegate {
     
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        filterContentForSearchText(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
+    }
+    
+    
+    
+    func searchBarIsEmpty() -> Bool {
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    
+    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
+        
+//        areasFiltered = areas.filter({( player : Player) -> Bool in
+//            return areas.lowercase.contains(searchText.lowercased())
+//        })
+        
+        tableView.reloadData()
+    }
+    
+    func isFiltering() -> Bool {
+        
+        let searchBarScopeIsFiltering = searchController.searchBar.selectedScopeButtonIndex != 0
+        searching = true
+        return searchController.isActive && (!searchBarIsEmpty() || searchBarScopeIsFiltering)
+    }
+}
 
+extension AssistirTableViewController: UISearchResultsUpdating  {
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        let searchBar = searchController.searchBar
+        //let scope = searchBar.scopeButtonTitles![searchBar.selectedScopeButtonIndex]
+        filterContentForSearchText(searchController.searchBar.text!)
+    }
 }
