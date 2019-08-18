@@ -16,6 +16,8 @@ class MentorViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     var courses = ["Desenvolvimento", "Sistema Interno", "Financeiro", "Design Gráfico"]
     
+    var coursesCompleteds = ["Desenvolvimento", "Financeiro"]
+    
     var people    = ["Por João Victor", "Por Arthur", "Por Anthony", "Por Kewin"]
     
     
@@ -29,10 +31,43 @@ class MentorViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeLeft(_:)))
+        leftSwipe.direction = .left
+        self.view.addGestureRecognizer(leftSwipe)
+        
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeRight(_:)))
+        rightSwipe.direction = .right
+        self.view.addGestureRecognizer(rightSwipe)
+    }
+    
+    @objc func swipeLeft(_ gesture: UISwipeGestureRecognizer) {
+        
+        if segmentedControl.selectedSegmentIndex == 0 {
+            segmentedControl.selectedSegmentIndex = 1
+            tableView.reloadData()
+        } else {
+            return
+        }
+    }
+    
+    @objc func swipeRight(_ gesture: UISwipeGestureRecognizer) {
+        
+        if segmentedControl.selectedSegmentIndex == 1 {
+            segmentedControl.selectedSegmentIndex = 0
+            tableView.reloadData()
+        } else {
+            return
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return courses.count
+        
+        if segmentedControl.selectedSegmentIndex == 0 {
+            return courses.count
+        } else {
+            return coursesCompleteds.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -47,7 +82,7 @@ class MentorViewController: UIViewController, UITableViewDelegate, UITableViewDa
             cell.progress.progress = 0.5
 
         } else {
-            cell.curso.text = courses[indexPath.row]
+            cell.curso.text = coursesCompleteds[indexPath.row]
             cell.autor.text = people[indexPath.row]
             cell.thumb.image = thumbs[indexPath.row]
             cell.play.image = completed

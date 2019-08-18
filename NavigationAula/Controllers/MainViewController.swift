@@ -35,17 +35,17 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
     @objc func button1Tapped(sender: UIButton) {
         buttonAtual = button
         print("button1Tapped")
-        performSegue(withIdentifier: "detailSegue", sender: self)
+        playVideo()
     }
     @objc func button2Tapped(_ sender: UIButton) {
         buttonAtual = button2
         print("button2Tapped")
-        performSegue(withIdentifier: "detailSegue", sender: self)
+        playVideo()
     }
     @objc func button3Tapped(_ sender: UIButton) {
         buttonAtual = button3
         print("button3Tapped")
-        performSegue(withIdentifier: "detailSegue", sender: self)
+        playVideo()
     }
     
     override func viewDidLoad() {
@@ -220,8 +220,11 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
             }
         }
     }
+    @IBAction func buttonPressed(_ sender: Any) {
+        self.playVideo()
+    }
     
-    private func playVideo() {
+    func playVideo() {
         guard let path = Bundle.main.path(forResource: "1 - Tutorial Clockify", ofType:"mp4") else {
             debugPrint("1 - Tutorial Clockify.mp4")
             return
