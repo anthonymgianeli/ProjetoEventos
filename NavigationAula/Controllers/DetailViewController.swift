@@ -11,6 +11,7 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var confirmButton: UIButton!
     
     var sections = "Mais de João"
     
@@ -18,6 +19,9 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        confirmButton.layer.cornerRadius = 8
+        confirmButton.layer.borderWidth = 1
 
     }
     
