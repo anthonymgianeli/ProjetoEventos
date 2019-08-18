@@ -17,8 +17,7 @@ class PerfilViewController: BaseViewController {
     
     var mentors = ["Arthur Rodrigues", "João Batista"]
     
-    //var mentorias = ["Mentoria 1", "Mentoria 2"]
-    
+    var imageNamed = ["arthur", "joao"]
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -96,7 +95,7 @@ extension PerfilViewController: UITableViewDataSource, UITableViewDelegate {
         
         cell.mentorName.text = mentors[indexPath.row]
         
-        cell.descriptionAtCell.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        cell.mentorImage?.image = UIImage(named: imageNamed[indexPath.row])
         
         return cell
     }

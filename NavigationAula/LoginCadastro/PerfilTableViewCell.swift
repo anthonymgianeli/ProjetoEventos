@@ -11,7 +11,6 @@ import UIKit
 class PerfilTableViewCell: UITableViewCell {
 
     @IBOutlet weak var mentorName: UILabel!
-    @IBOutlet weak var descriptionAtCell: UILabel!
     @IBOutlet weak var mentorImage: UIImageView!
     
 
