@@ -43,7 +43,19 @@ class AssistirTableViewController: UITableViewController {
         cell.area.text = areas[indexPath.row]
         return cell
     }
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "assistirDetail", sender: indexPath.row)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "assistirDetail",
+            let detailVC = segue.destination as? AssistirDetalheViewController{
+            if let videoIndex = sender as? Int {
+                detailVC.detailTitle = areas[videoIndex]
+            }
+        }
+    }
 }
 
 extension AssistirTableViewController: UISearchBarDelegate {
