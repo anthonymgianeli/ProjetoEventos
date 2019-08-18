@@ -664,10 +664,10 @@
             </objects>
             <point key="canvasLocation" x="2650" y="190"/>
         </scene>
-        <!--Assistir-->
+        <!--Presenciais-->
         <scene sceneID="nOH-Wj-tZr">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Presenciais" storyboardName="Assistir" referencedIdentifier="Assistir" id="ELn-NA-rrs" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="Presenciais" storyboardName="Presenciais" referencedIdentifier="Presenciais" id="ELn-NA-rrs" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="JTF-Pd-90n"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p0w-AW-SHB" userLabel="First Responder" sceneMemberID="firstResponder"/>
