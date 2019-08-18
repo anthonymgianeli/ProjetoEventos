@@ -50,10 +50,10 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
         //Titles
         words.append("Treinamento")
-        words.append("Festa da unicamp")
-        words.append("Stand up dos 4 amigos")
-        words.append("Mega Balada do Seculo")
-        words.append("Encontro de Carros Antigos")
+        words.append("Bem Vindos à Synvia")
+        words.append("Treinamento Financeiro")
+        words.append("Treinamento Devs")
+        words.append("Estratégias de Marketing Digital")
         
         //Descritions
         descricoes.append("Por Danilo")
