@@ -10,6 +10,7 @@ import UIKit
 
 class AssistirTableViewCell: UITableViewCell {
 
+    
     @IBOutlet weak var area: UILabel!
     
     override func awakeFromNib() {

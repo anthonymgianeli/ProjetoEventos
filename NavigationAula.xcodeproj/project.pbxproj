@@ -31,6 +31,7 @@
 		BAD6E2C12308C60000A70264 /* MentorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD6E2C02308C60000A70264 /* MentorTableViewCell.swift */; };
 		BAD6E2C32308E7BE00A70264 /* Assistir.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD6E2C22308E7BE00A70264 /* Assistir.storyboard */; };
 		BAD6E2C52309202200A70264 /* AssistirTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD6E2C42309202200A70264 /* AssistirTableViewCell.swift */; };
+		BAD6E2CB2309245700A70264 /* AssistirTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD6E2CA2309245700A70264 /* AssistirTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		BAD6E2C02308C60000A70264 /* MentorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorTableViewCell.swift; sourceTree = "<group>"; };
 		BAD6E2C22308E7BE00A70264 /* Assistir.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Assistir.storyboard; sourceTree = "<group>"; };
 		BAD6E2C42309202200A70264 /* AssistirTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistirTableViewCell.swift; sourceTree = "<group>"; };
+		BAD6E2CA2309245700A70264 /* AssistirTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistirTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 				155BE24B2280791D00A0DC20 /* DetalhesEventosViewController.swift */,
 				3C715D082284B048005713EA /* CellEventos.swift */,
 				BAD6E2BC2308B57800A70264 /* MentorViewController.swift */,
+				BAD6E2CA2309245700A70264 /* AssistirTableViewController.swift */,
 				BAD6E2C02308C60000A70264 /* MentorTableViewCell.swift */,
 				BAD6E2C42309202200A70264 /* AssistirTableViewCell.swift */,
 			);
@@ -487,6 +490,7 @@
 				155BE24622806C5800A0DC20 /* MainViewController.swift in Sources */,
 				BAD6E2BD2308B57800A70264 /* MentorViewController.swift in Sources */,
 				155BE214228060D100A0DC20 /* AppDelegate.swift in Sources */,
+				BAD6E2CB2309245700A70264 /* AssistirTableViewController.swift in Sources */,
 				BAD6E2C12308C60000A70264 /* MentorTableViewCell.swift in Sources */,
 				155BE24422806B6000A0DC20 /* PerfilViewController.swift in Sources */,
 				155BE242228069A400A0DC20 /* BaseViewController.swift in Sources */,
