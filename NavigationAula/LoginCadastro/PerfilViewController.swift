@@ -12,10 +12,9 @@ import FirebaseDatabase
 
 class PerfilViewController: BaseViewController {
 
-    var sections =  ["Últimos treinamentos", "Mentoria"]
-    var names = [["Treinamento 1", "Treinamento 2"] , ["Mentoria 1", "Mentoria 2"]]
+    var sections =  ["Histórico", "Mentorias"]
     
-    var mentors = ["Arthur Rodrigues", "João Batista"]
+    var names = [["Treinamento 1", "Treinamento 2"] , ["Mentoria 1", "Mentoria 2"]]
     
     var imageNamed = ["arthur", "joao"]
     
@@ -92,8 +91,6 @@ extension PerfilViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableviewID") as!  PerfilTableViewCell
         
         cell.mentorName.text = names[indexPath.section][indexPath.row]
-        
-        cell.mentorName.text = mentors[indexPath.row]
         
         cell.mentorImage?.image = UIImage(named: imageNamed[indexPath.row])
         
