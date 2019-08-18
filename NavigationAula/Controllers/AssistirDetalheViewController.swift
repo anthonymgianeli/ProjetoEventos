@@ -26,11 +26,11 @@ class AssistirDetalheViewController: UIViewController, UITableViewDelegate, UITa
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        words.append("Treinamento")
-        words.append("Festa da unicamp")
-        words.append("Stand up dos 4 amigos")
-        words.append("Mega Balada do Seculo")
-        words.append("Encontro de Carros Antigos")
+        words.append("Treinamento RH")
+        words.append("Bem Vindos à Synvia")
+        words.append("Treinamento Financeiro")
+        words.append("Treinamento Devs")
+        words.append("Marketing Digital")
         
         descricoes.append("Por Danilo")
         descricoes.append("Por Danilo")
