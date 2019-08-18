@@ -10,12 +10,16 @@ import UIKit
 import FirebaseDatabase
 import FirebaseAuth
 
-class CadastroViewController: BaseViewController {
+class CadastroViewController: BaseViewController, UITextFieldDelegate {
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var enderecoTextField: UITextField!
-//    @IBOutlet weak var cpfTextField: UITextField!
+    @IBOutlet weak var cpfTextField: UITextField!
     @IBOutlet weak var idadeTextField: UITextField!
+    @IBOutlet weak var ra: UITextField!
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     @IBOutlet weak var finalizarButton: UIButton!
     
     var handle: AuthStateDidChangeListenerHandle?
@@ -26,6 +30,24 @@ class CadastroViewController: BaseViewController {
         
             post()
         self.hideKeyboardWhenTappedAround()
+        
+        setupKeyboardNotification()
+        
+        nameTextField.delegate = self
+        enderecoTextField.delegate = self
+        idadeTextField.delegate = self
+        cpfTextField.delegate = self
+        ra.delegate = self
+
+        
+        finalizarButton.layer.cornerRadius = 5
+        finalizarButton.clipsToBounds = true
+        
+        nameTextField.endEditing(true)
+        enderecoTextField.endEditing(true)
+        idadeTextField.endEditing(true)
+        cpfTextField.endEditing(true)
+        ra.endEditing(true)
         
         // Do any additional setup after loading the view.
         finalizarButton.clipsToBounds = true
@@ -54,5 +76,37 @@ class CadastroViewController: BaseViewController {
         
         let dbReference = Database.database().reference()
         dbReference.child("Posts").childByAutoId().setValue(post)
+    }
+    
+    func setupKeyboardNotification(){
+        NotificationCenter.default.addObserver(self, selector: #selector(resizeTableView), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(resizeTableView), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        
+    }
+    
+    @objc func resizeTableView(_ notification: Notification) {
+        guard let keyboardValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else { return }
+        
+        let keyboardRect = keyboardValue.cgRectValue
+        let keyboardRectInSuperView = scrollView.convert(keyboardRect, from: view.window)
+        
+        if notification.name == UIResponder.keyboardWillHideNotification {
+            scrollView.contentInset = .zero
+        }
+        else {
+            scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardRectInSuperView.height - view.safeAreaInsets.bottom, right: 0)
+            scrollView.contentOffset = CGPoint(x: 0, y:  keyboardRectInSuperView.height - view.safeAreaInsets.bottom - 130)
+        }
+        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
+    }
+    
+    @objc func endSelection(_ force: Bool) -> Bool {
+        return self.view.endEditing(force)
     }
 }
