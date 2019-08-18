@@ -12,8 +12,9 @@ class MentorTableViewCell: UITableViewCell {
     
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var info: UILabel!
+    @IBOutlet weak var img: UIImageView!
     
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -14,7 +14,12 @@ class MentorViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var tableView: UITableView!
     
     var sections = ["Desenvolvimento", "Design", "Financeiro", "Relacionamento Interpessoal"]
-    var people    = [["João Victor Batista", "Arthur Rodrigues", "Jéssica Pereira"], ["Kewin Lima", "Jorge Silva"], ["Pedro Silva","Vinicius Oliviera", "Gabriela Resende"], ["Marcela Barros", "Mônica Sousa"]]
+    
+    var people    = [["João Victor Batista", "Arthur Rodrigues", "Jéssica Pereira"], ["Kewin Lima"], ["Vinicius Oliviera", "Gabriela Resende"], ["Marcela Barros", "Mônica Sousa"]]
+    
+    var info = [["Tenho tido algumas dificuldades na hora de tratar requisições no backend", "Gostaria de ajuda para desenvolver melhor arquivos css", "Preciso de sugestões de como treinar uma rede neural para resultados mais precisos"],["Tenho tido algumas dificuldades na hora de tratar requisições no backend"],["","",],["",""]]
+    
+    var image = UIImage(named: "seta")
     
     
     override func viewDidLoad() {
@@ -45,6 +50,8 @@ class MentorViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Mentoria", for: indexPath) as! MentorTableViewCell
         cell.name.text = people[indexPath.section][indexPath.row]
+        cell.info.text = info[indexPath.section][indexPath.row]
+        cell.img.image = image
         return cell
     }
     
