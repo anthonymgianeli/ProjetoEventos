@@ -33,6 +33,17 @@ class PresenciaisViewController: UIViewController {
         tableView.reloadData()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "detail",
+            let detailVC = segue.destination as? DetailViewController {
+            if let detailIndex = sender as? Int {
+                detailVC.auxTitle =  nomesDosPresenciais[detailIndex]
+            }
+        }
+        
+    }
+    
 }
 
 
