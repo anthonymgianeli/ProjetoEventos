@@ -10,8 +10,7 @@ import UIKit
 
 class PerfilTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var mentorName: UILabel!
-    @IBOutlet weak var mentorImage: UIImageView!
+    @IBOutlet weak var label: UILabel!
     
 
 }
