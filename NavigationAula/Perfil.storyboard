@@ -16,10 +16,10 @@
                 <navigationController storyboardIdentifier="Perfil" title="Perfil" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lUc-Wm-oEX" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Perfil" image="perfil" selectedImage="perfil" id="ArL-2i-stU"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0ca-bX-WML">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="0ca-bX-WML">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.29803921570000003" green="0.10980392160000001" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="RlU-Hw-fVz" kind="relationship" relationship="rootViewController" id="Sgj-uq-Zx1"/>
@@ -29,7 +29,7 @@
             </objects>
             <point key="canvasLocation" x="367" y="-204"/>
         </scene>
-        <!--Perfil View Controller-->
+        <!--Perfil-->
         <scene sceneID="X71-t0-VAE">
             <objects>
                 <viewController id="RlU-Hw-fVz" customClass="PerfilViewController" customModule="NavigationAula" customModuleProvider="target" sceneMemberID="viewController">
@@ -122,7 +122,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="B2u-Xz-Bfj"/>
                     </view>
-                    <navigationItem key="navigationItem" id="yI9-6h-dgI"/>
+                    <navigationItem key="navigationItem" title="Perfil" id="yI9-6h-dgI"/>
                     <connections>
                         <outlet property="jobRoleLbl" destination="6i3-pW-T18" id="IFb-XQ-PhZ"/>
                         <outlet property="nameLbl" destination="lJ6-Y3-C9M" id="cga-dW-OJv"/>
