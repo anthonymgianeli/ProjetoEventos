@@ -257,6 +257,7 @@
                     <connections>
                         <outlet property="confirmButton" destination="zig-yy-llZ" id="OYK-Jo-fhS"/>
                         <outlet property="tableView" destination="Yme-uA-NOG" id="xNF-mE-2s3"/>
+                        <outlet property="titleLbl" destination="VvL-bf-u2L" id="TKm-jB-5o0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAb-3a-fou" userLabel="First Responder" sceneMemberID="firstResponder"/>

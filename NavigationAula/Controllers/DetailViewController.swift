@@ -22,10 +22,6 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        confirmButton.layer.cornerRadius = 8
-        confirmButton.layer.borderWidth = 1
-
         titleLbl.text = auxTitle
     }
     
