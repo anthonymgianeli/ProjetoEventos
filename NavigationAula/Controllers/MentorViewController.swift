@@ -29,6 +29,34 @@ class MentorViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeLeft(_:)))
+        leftSwipe.direction = .left
+        self.view.addGestureRecognizer(leftSwipe)
+        
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeRight(_:)))
+        rightSwipe.direction = .right
+        self.view.addGestureRecognizer(rightSwipe)
+    }
+    
+    @objc func swipeLeft(_ gesture: UISwipeGestureRecognizer) {
+        
+        if segmentedControl.selectedSegmentIndex == 0 {
+            segmentedControl.selectedSegmentIndex = 1
+            tableView.reloadData()
+        } else {
+            return
+        }
+    }
+    
+    @objc func swipeRight(_ gesture: UISwipeGestureRecognizer) {
+        
+        if segmentedControl.selectedSegmentIndex == 1 {
+            segmentedControl.selectedSegmentIndex = 0
+            tableView.reloadData()
+        } else {
+            return
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
