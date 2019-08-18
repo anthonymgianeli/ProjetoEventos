@@ -10,21 +10,42 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var sections = "Mais de João"
+    
+    var otherNames = ["Introdução Acrobat", "Introdução Acrobat", "Introdução Acrobat", "Introdução Acrobat"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+
+extension DetailViewController : UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sections
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return otherNames.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "others") as! DetailTableViewCell
+        
+        cell.otherNames.text = self.otherNames[indexPath.row]
+        
+        return cell
+        
+    }
+    
+    
+    
+    
 }

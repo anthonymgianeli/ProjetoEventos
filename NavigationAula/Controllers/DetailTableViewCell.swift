@@ -10,4 +10,6 @@ import UIKit
 
 class DetailTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var otherNames: UILabel!
+    
 }
