@@ -18,8 +18,8 @@ class PresenciaisViewController: UIViewController {
     
     var porQuem2 = ["Por Arthur", "Por Kewin", "Por João"]
     
-    var nomesDosPresenciais = ["Machine Learning","Automação","Storytelling","Novo Sistema Synvia",
-                               "Machine Learning","Automação","Storytelling",]
+    var nomesDosPresenciais = ["Data Science","Automação","MongoDB","SQL",
+                               "Python","PowerBI","R"]
     
     var confirmed = [UIImage(named: ""), UIImage(named: "")]
     

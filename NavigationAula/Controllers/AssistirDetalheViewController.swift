@@ -30,7 +30,7 @@ class AssistirDetalheViewController: UIViewController, UITableViewDelegate, UITa
         words.append("Bem Vindos à Synvia")
         words.append("Treinamento Financeiro")
         words.append("Treinamento Devs")
-        words.append("Estratégias de Marketing Digital")
+        words.append("Marketing Digital")
         
         descricoes.append("Por Danilo")
         descricoes.append("Por Danilo")
