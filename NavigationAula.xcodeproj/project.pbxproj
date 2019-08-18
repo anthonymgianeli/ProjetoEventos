@@ -19,6 +19,9 @@
 		155BE24A22806D5A00A0DC20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155BE24922806D5A00A0DC20 /* LaunchScreen.storyboard */; };
 		155BE24C2280791D00A0DC20 /* DetalhesEventosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155BE24B2280791D00A0DC20 /* DetalhesEventosViewController.swift */; };
 		364607762308D9A10072A76C /* PerfilTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364607752308D9A10072A76C /* PerfilTableViewCell.swift */; };
+		3646078223092A900072A76C /* Presenciais.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3646078123092A900072A76C /* Presenciais.storyboard */; };
+		3646078623092C320072A76C /* PresenciaisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646078523092C320072A76C /* PresenciaisViewController.swift */; };
+		36460788230931E40072A76C /* PresencialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36460787230931E40072A76C /* PresencialTableViewCell.swift */; };
 		3C715D092284B048005713EA /* CellEventos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C715D082284B048005713EA /* CellEventos.swift */; };
 		3C715D102285219B005713EA /* CompraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C715D0F2285219B005713EA /* CompraViewController.swift */; };
 		3CEF49792283586800AAE249 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF49782283586800AAE249 /* GoogleService-Info.plist */; };
@@ -70,6 +73,9 @@
 		155BE24B2280791D00A0DC20 /* DetalhesEventosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesEventosViewController.swift; sourceTree = "<group>"; };
 		2958BBF845AB92A121C784B8 /* Pods_NavigationAulaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavigationAulaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		364607752308D9A10072A76C /* PerfilTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilTableViewCell.swift; sourceTree = "<group>"; };
+		3646078123092A900072A76C /* Presenciais.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Presenciais.storyboard; sourceTree = "<group>"; };
+		3646078523092C320072A76C /* PresenciaisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenciaisViewController.swift; sourceTree = "<group>"; };
+		36460787230931E40072A76C /* PresencialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresencialTableViewCell.swift; sourceTree = "<group>"; };
 		36BD3EAAA3D8FC63A294317D /* Pods-NavigationAulaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationAulaUITests.release.xcconfig"; path = "Target Support Files/Pods-NavigationAulaUITests/Pods-NavigationAulaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		38C1542EE6B79F3053A5E9E6 /* Pods_NavigationAulaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavigationAulaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C715D082284B048005713EA /* CellEventos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellEventos.swift; sourceTree = "<group>"; };
@@ -150,6 +156,7 @@
 				3C715D0C22851F6D005713EA /* Controllers */,
 				3C715D0E2285210D005713EA /* Compra */,
 				155BE217228060D100A0DC20 /* Main.storyboard */,
+				3646078123092A900072A76C /* Presenciais.storyboard */,
 				BAD6E2BA2308AE8900A70264 /* Perfil.storyboard */,
 				BAD6E2C22308E7BE00A70264 /* Assistir.storyboard */,
 				155BE24922806D5A00A0DC20 /* LaunchScreen.storyboard */,
@@ -198,6 +205,8 @@
 				BAD6E2CA2309245700A70264 /* AssistirTableViewController.swift */,
 				BAD6E2C02308C60000A70264 /* MentorTableViewCell.swift */,
 				BAD6E2C42309202200A70264 /* AssistirTableViewCell.swift */,
+				3646078523092C320072A76C /* PresenciaisViewController.swift */,
+				36460787230931E40072A76C /* PresencialTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -344,6 +353,7 @@
 			files = (
 				155BE24A22806D5A00A0DC20 /* LaunchScreen.storyboard in Resources */,
 				3CEF49792283586800AAE249 /* GoogleService-Info.plist in Resources */,
+				3646078223092A900072A76C /* Presenciais.storyboard in Resources */,
 				BAD6E2C32308E7BE00A70264 /* Assistir.storyboard in Resources */,
 				BAD6E2BB2308AE8900A70264 /* Perfil.storyboard in Resources */,
 				155BE21B228060D200A0DC20 /* Assets.xcassets in Resources */,
@@ -484,6 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAD6E2C52309202200A70264 /* AssistirTableViewCell.swift in Sources */,
+				36460788230931E40072A76C /* PresencialTableViewCell.swift in Sources */,
 				3C715D092284B048005713EA /* CellEventos.swift in Sources */,
 				364607762308D9A10072A76C /* PerfilTableViewCell.swift in Sources */,
 				3CEF497B2283615900AAE249 /* LoginViewController.swift in Sources */,
@@ -495,6 +506,7 @@
 				155BE24422806B6000A0DC20 /* PerfilViewController.swift in Sources */,
 				155BE242228069A400A0DC20 /* BaseViewController.swift in Sources */,
 				3C715D102285219B005713EA /* CompraViewController.swift in Sources */,
+				3646078623092C320072A76C /* PresenciaisViewController.swift in Sources */,
 				3CEF497D2283716300AAE249 /* CadastroViewController.swift in Sources */,
 				155BE24C2280791D00A0DC20 /* DetalhesEventosViewController.swift in Sources */,
 			);
@@ -665,7 +677,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NQW9RC6R9A;
+				DEVELOPMENT_TEAM = 9KU377264X;
 				INFOPLIST_FILE = NavigationAula/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -684,7 +696,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NQW9RC6R9A;
+				DEVELOPMENT_TEAM = 9KU377264X;
 				INFOPLIST_FILE = NavigationAula/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
