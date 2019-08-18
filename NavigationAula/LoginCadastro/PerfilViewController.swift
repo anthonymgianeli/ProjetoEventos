@@ -12,13 +12,21 @@ import FirebaseDatabase
 
 class PerfilViewController: BaseViewController {
 
-    @IBOutlet weak var myLabel: UILabel!
+    var sections =  ["Últimos treinamentos", "Mentoria"]
+    var names = [["Treinamento 1", "Treinamento 2"] , ["Mentoria 1", "Mentoria 2"]]
     
-    override var myOutlet: UIView? {
-        get {
-            return myLabel
-        }
-    }
+    var mentors = ["Arthur Rodrigues", "João Batista"]
+    
+    //var mentorias = ["Mentoria 1", "Mentoria 2"]
+    
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var sectorLbl: UILabel!
+    @IBOutlet weak var jobRoleLbl: UILabel!
+    @IBOutlet weak var profileImage: UIImageView!
+    
     
     override var name: String {
         get {
@@ -29,7 +37,19 @@ class PerfilViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.delegate = self
+        tableView.dataSource = self
+        
         post()
+        setupLabels()
+    }
+    
+    func setupLabels() {
+        
+        self.nameLbl.text = "Anthony Marques Gianeli"
+        self.sectorLbl.text = "Tecnologia da Informação"
+        self.jobRoleLbl.text = "iOS Developer"
+        self.profileImage.image = UIImage(named: "anthony")
     }
     
         func post (){
@@ -52,4 +72,35 @@ class PerfilViewController: BaseViewController {
     }
     */
 
+}
+
+extension PerfilViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return sections.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sections[section]
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return names.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tableviewID") as!  PerfilTableViewCell
+        
+        cell.mentorName.text = names[indexPath.section][indexPath.row]
+        
+        cell.mentorName.text = mentors[indexPath.row]
+        
+        cell.descriptionAtCell.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        
+        return cell
+    }
+    
+    
+    
 }
