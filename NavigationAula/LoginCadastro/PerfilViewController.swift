@@ -55,17 +55,34 @@ class PerfilViewController: BaseViewController {
             let dbReference = Database.database().reference()
             dbReference.child("Posts").childByAutoId().setValue(post)
         }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func resetUser() {
+        // create the alert
+        let alert = UIAlertController(title: "Ah que pena!", message: "Você tem certeza que deseja sair?", preferredStyle: UIAlertController.Style.alert)
+        
+        // add the actions (buttons)
+        alert.addAction(UIAlertAction(title: "QUERO SAIR", style: UIAlertAction.Style.default, handler: { action in
+            self.logout()
+        }))
+        alert.addAction(UIAlertAction(title: "NÃO", style: UIAlertAction.Style.cancel, handler: nil))
+        
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
     }
-    */
 
+    func logout() {
+        
+        resetDefaults()
+    }
+    
+    func resetDefaults() {
+        let defaults = UserDefaults.standard
+        let dictionary = defaults.dictionaryRepresentation()
+        dictionary.keys.forEach { key in
+            defaults.removeObject(forKey: key)
+        }
+        defaults.synchronize()
+    }
 }
 
 extension PerfilViewController: UITableViewDataSource, UITableViewDelegate {
@@ -92,4 +109,28 @@ extension PerfilViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 6:
+            resetUser()
+        default:
+            break
+        }
+    }
+}
+
+extension  UIViewController {
+    
+    func showAlert(withTitle title: String, withMessage message:String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK", style: .default, handler: { action in
+        })
+        let cancel = UIAlertAction(title: "Cancel", style: .default, handler: { action in
+        })
+        alert.addAction(ok)
+        alert.addAction(cancel)
+        DispatchQueue.main.async(execute: {
+            self.present(alert, animated: true)
+        })
+    }
 }
