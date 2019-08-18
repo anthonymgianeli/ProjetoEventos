@@ -33,6 +33,8 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
         
         emailTextField.endEditing(true)
         passwordTextField.endEditing(true)
+        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(LoginViewController.endSelection(_:))))
     }
     
     @IBAction func signInSelectorChanged(_ sender: UISegmentedControl) {
@@ -112,4 +114,9 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
         
         return true
     }
+    
+    @objc func endSelection(_ force: Bool) -> Bool {
+        return self.view.endEditing(force)
+    }
+
 }
