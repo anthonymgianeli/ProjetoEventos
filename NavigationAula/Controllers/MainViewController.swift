@@ -56,11 +56,11 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
         words.append("Encontro de Carros Antigos")
         
         //Descritions
-        descricoes.append("Um dos maiores eventos de moda de São Paulo, trazendo modelos de todas pastes do brasil.")
-        descricoes.append("A Unicamp vem com a sua maior festa anual com a interação de todos os alunos, com objetivo de unir cada vez mais a universidade.")
-        descricoes.append("O Stand Up mais divertido de todos os tempos com alguns dos comediantes mais famosos desses tempos que ninguem consegue ficar serio quando eles entram no palco.")
-        descricoes.append("A balada mais top de campinas, a festa esta maior a cada ano que se passa, vem pessoas de todas as cidades da região.")
-        descricoes.append("Venha participar de um dos maiores encontros de carros antigos da região.")
+        descricoes.append("Por Danilo")
+        descricoes.append("Por Danilo")
+        descricoes.append("Por Danilo")
+        descricoes.append("Por Danilo")
+        descricoes.append("Por Danilo")
         
         //images
         if let imagem = UIImage(named: "Fotolia_120871392_Subscription_Monthly_XXL"){

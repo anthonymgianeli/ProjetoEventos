@@ -14,7 +14,7 @@
         <scene sceneID="N7v-k3-CDR">
             <objects>
                 <navigationController storyboardIdentifier="Perfil" title="Perfil" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lUc-Wm-oEX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Perfil" image="perfil" selectedImage="perfil" id="ArL-2i-stU"/>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="user-2" selectedImage="user-2" id="ArL-2i-stU"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="0ca-bX-WML">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -136,6 +136,6 @@
     </scenes>
     <resources>
         <image name="Star " width="18.5" height="17"/>
-        <image name="perfil" width="20" height="20"/>
+        <image name="user-2" width="20" height="26"/>
     </resources>
 </document>

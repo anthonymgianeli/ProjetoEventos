@@ -106,7 +106,7 @@
         <scene sceneID="ymO-Vs-V7T">
             <objects>
                 <navigationController restorationIdentifier="Presenciais" storyboardIdentifier="Presenciais" automaticallyAdjustsScrollViewInsets="NO" id="rSL-Xd-8l7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Presenciais" id="Djc-iG-Bj4"/>
+                    <tabBarItem key="tabBarItem" title="Presenciais" image="Grupo 195" selectedImage="Grupo 195" id="Djc-iG-Bj4"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" restorationIdentifier="Presenciais" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="0Ud-GO-OwS">
@@ -125,6 +125,7 @@
     </scenes>
     <resources>
         <image name="21 de Outubro" width="64" height="64"/>
+        <image name="Grupo 195" width="39" height="29"/>
         <image name="Não Confirmado" width="38" height="38"/>
         <image name="Star " width="18.5" height="17"/>
     </resources>
