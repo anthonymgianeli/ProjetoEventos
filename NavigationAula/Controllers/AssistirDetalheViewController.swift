@@ -76,13 +76,30 @@ class AssistirDetalheViewController: UIViewController, UITableViewDelegate, UITa
         // Configure cell of TableView
         cell.title.text = words[indexPath.row]
         cell.descricao.text = descricoes[indexPath.row]
-        cell.imagem.image = imagens [indexPath.row]
+        cell.imagem.image = imagens[indexPath.row]
         
         return cell
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "video", sender: indexPath.row)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "video",
+            let detailVC = segue.destination as? VideoViewController{
+            if let videoIndex = sender as? Int {
+                print(imagens)
+                print(videoIndex)
+                detailVC.auxThumb = imagens[videoIndex]
+                detailVC.auxTitle   = words[videoIndex]
+                detailVC.navItem.backBarButtonItem?.title = detailTitle
+            }
+        }
     }
     
     
