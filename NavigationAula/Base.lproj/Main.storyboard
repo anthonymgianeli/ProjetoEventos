@@ -129,46 +129,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SEh-ew-DNe">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" allowsSelection="NO" rowHeight="90" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="SEh-ew-DNe">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="separatorColor" red="0.48629849219999999" green="0.17915938470000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.46666666666666667" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="sectionIndexColor" red="1" green="0.0" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.0" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="sectionIndexTrackingBackgroundColor" red="1" green="0.0" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.46666666666666667" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Mentoria" rowHeight="90" id="vf5-ft-y86" customClass="MentorTableViewCell" customModule="NavigationAula" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="90"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vf5-ft-y86" id="Bkf-j5-xzQ">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u5P-6i-Lqf">
-                                                    <rect key="frame" x="20" y="11" width="340" height="77.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="24" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u5P-6i-Lqf">
+                                                    <rect key="frame" x="20" y="11" width="340" height="47.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JL-pH-iBa">
                                                             <rect key="frame" x="0.0" y="0.0" width="50.5" height="24"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                            <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="hjhlk" lineBreakMode="tailTruncation" numberOfLines="0" highlighted="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUh-mN-0E5">
-                                                            <rect key="frame" x="0.0" y="12" width="33.5" height="65.5"/>
+                                                            <rect key="frame" x="0.0" y="28" width="33.5" height="19.5"/>
                                                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJy-2E-wmx">
-                                                    <rect key="frame" x="20" y="88.5" width="394" height="1"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="tintColor" red="0.29803921570000003" green="0.10980392160000001" blue="0.59999999999999998" alpha="0.25" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="1" id="Pzd-qy-VCK"/>
-                                                    </constraints>
-                                                </view>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w6y-h5-vr6">
                                                     <rect key="frame" x="368" y="40" width="38" height="9.5"/>
                                                     <constraints>
@@ -178,15 +169,11 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="w6y-h5-vr6" firstAttribute="top" secondItem="Bkf-j5-xzQ" secondAttribute="top" constant="40" id="6gV-d9-GW4"/>
-                                                <constraint firstAttribute="trailing" secondItem="xJy-2E-wmx" secondAttribute="trailing" id="7OQ-Mm-QFW"/>
                                                 <constraint firstAttribute="trailing" secondItem="w6y-h5-vr6" secondAttribute="trailing" constant="8" id="8RN-Tp-eae"/>
                                                 <constraint firstItem="w6y-h5-vr6" firstAttribute="centerY" secondItem="Bkf-j5-xzQ" secondAttribute="centerY" id="COY-3m-AO4"/>
                                                 <constraint firstItem="w6y-h5-vr6" firstAttribute="leading" secondItem="u5P-6i-Lqf" secondAttribute="trailing" constant="8" id="UQi-r0-IUl"/>
                                                 <constraint firstItem="u5P-6i-Lqf" firstAttribute="leading" secondItem="Bkf-j5-xzQ" secondAttribute="leadingMargin" id="YHM-bL-SlU"/>
-                                                <constraint firstItem="xJy-2E-wmx" firstAttribute="leading" secondItem="u5P-6i-Lqf" secondAttribute="leading" id="cIJ-IV-lxT"/>
-                                                <constraint firstItem="xJy-2E-wmx" firstAttribute="top" secondItem="u5P-6i-Lqf" secondAttribute="bottom" id="hTd-yr-h8a"/>
                                                 <constraint firstItem="u5P-6i-Lqf" firstAttribute="top" secondItem="Bkf-j5-xzQ" secondAttribute="topMargin" id="hea-U2-lWj"/>
-                                                <constraint firstAttribute="bottom" secondItem="xJy-2E-wmx" secondAttribute="bottom" id="pAI-TJ-Ne7"/>
                                                 <constraint firstAttribute="bottom" secondItem="w6y-h5-vr6" secondAttribute="bottom" constant="40" id="rBv-zI-bm2"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -369,22 +356,6 @@
             </objects>
             <point key="canvasLocation" x="2309" y="-1252"/>
         </scene>
-        <!--Agendar Treinamento-->
-        <scene sceneID="nih-0T-w8m">
-            <objects>
-                <viewController id="3Kx-0I-Tes" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bGA-ie-9z5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="EuQ-jW-fui"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Agendar Treinamento" id="xNW-C2-ljV"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XnX-xY-or7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1526" y="1323"/>
-        </scene>
         <!--Treinamentos-->
         <scene sceneID="FF7-KF-Chu">
             <objects>
@@ -501,7 +472,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uCJ-B8-bER" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-413.04347826086962" y="1322.5446428571429"/>
+            <point key="canvasLocation" x="141" y="1359"/>
         </scene>
         <!--Detalhes dos Eventos-->
         <scene sceneID="VB3-os-lZy">
@@ -590,7 +561,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6wN-CB-ydv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-413" y="2298"/>
+            <point key="canvasLocation" x="141" y="2283"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="G5H-yC-64l">
@@ -602,7 +573,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.29803921570000003" green="0.10980392160000001" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.37321364880000002" green="0.31092840430000002" blue="0.80396306510000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
@@ -616,7 +587,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="lid-tY-zz5" kind="relationship" relationship="viewControllers" id="fbQ-ff-38P"/>
+                        <segue destination="sun-sg-MpZ" kind="relationship" relationship="viewControllers" id="jzO-99-ziB"/>
                         <segue destination="uCN-hi-9OH" kind="relationship" relationship="viewControllers" id="b5Z-Zn-HZz"/>
                         <segue destination="gB0-wL-7fl" kind="relationship" relationship="viewControllers" id="LsC-ra-iNy"/>
                         <segue destination="4bN-a6-sh2" kind="relationship" relationship="viewControllers" id="vcn-Ni-eX8"/>
@@ -626,26 +597,15 @@
             </objects>
             <point key="canvasLocation" x="1306" y="-437"/>
         </scene>
-        <!--Agendar-->
-        <scene sceneID="8WI-6B-GCy">
+        <!--Agendamento-->
+        <scene sceneID="EJA-t1-sTa">
             <objects>
-                <navigationController id="lid-tY-zz5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Agendar" image="agendamento" id="LLm-bu-fHA"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DHK-YD-8Yu">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.29803921568627451" green="0.10980392156862745" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="3Kx-0I-Tes" kind="relationship" relationship="rootViewController" id="jTi-7W-0DD"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="niw-tn-A9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="Agendamento" storyboardName="Agendamento" referencedIdentifier="Agendamento" id="sun-sg-MpZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="baz-OE-duf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1S8-dx-s5r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1525" y="481"/>
+            <point key="canvasLocation" x="-998" y="190"/>
         </scene>
         <!--Treinamentos-->
         <scene sceneID="lmL-3g-Xmh">
@@ -657,7 +617,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.29803921570000003" green="0.10980392160000001" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.37321364880000002" green="0.31092840430000002" blue="0.80396306510000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -674,7 +634,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ArG-UV-EOF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-413" y="481"/>
+            <point key="canvasLocation" x="141" y="481"/>
         </scene>
         <!--Mentoria-->
         <scene sceneID="diX-tR-rN8">
@@ -685,7 +645,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mj4-A7-zK4">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.29803921570000003" green="0.10980392160000001" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.27450980392156865" green="0.20392156862745098" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -707,11 +667,10 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OVX-1f-zMt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2855" y="484"/>
+            <point key="canvasLocation" x="2973" y="190"/>
         </scene>
     </scenes>
     <resources>
-        <image name="agendamento" width="20" height="20"/>
         <image name="background" width="207" height="448"/>
         <image name="mentor" width="20" height="20"/>
         <image name="treinamento" width="20" height="20"/>

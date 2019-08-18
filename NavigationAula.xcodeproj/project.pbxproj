@@ -29,6 +29,7 @@
 		BAD6E2BB2308AE8900A70264 /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD6E2BA2308AE8900A70264 /* Perfil.storyboard */; };
 		BAD6E2BD2308B57800A70264 /* MentorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD6E2BC2308B57800A70264 /* MentorViewController.swift */; };
 		BAD6E2C12308C60000A70264 /* MentorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD6E2C02308C60000A70264 /* MentorTableViewCell.swift */; };
+		BAD6E2C32308E7BE00A70264 /* Agendamento.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD6E2C22308E7BE00A70264 /* Agendamento.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		BAD6E2BA2308AE8900A70264 /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
 		BAD6E2BC2308B57800A70264 /* MentorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorViewController.swift; sourceTree = "<group>"; };
 		BAD6E2C02308C60000A70264 /* MentorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorTableViewCell.swift; sourceTree = "<group>"; };
+		BAD6E2C22308E7BE00A70264 /* Agendamento.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Agendamento.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				3C715D0E2285210D005713EA /* Compra */,
 				155BE217228060D100A0DC20 /* Main.storyboard */,
 				BAD6E2BA2308AE8900A70264 /* Perfil.storyboard */,
+				BAD6E2C22308E7BE00A70264 /* Agendamento.storyboard */,
 				155BE24922806D5A00A0DC20 /* LaunchScreen.storyboard */,
 				155BE21A228060D200A0DC20 /* Assets.xcassets */,
 				155BE21F228060D200A0DC20 /* Info.plist */,
@@ -335,6 +338,7 @@
 			files = (
 				155BE24A22806D5A00A0DC20 /* LaunchScreen.storyboard in Resources */,
 				3CEF49792283586800AAE249 /* GoogleService-Info.plist in Resources */,
+				BAD6E2C32308E7BE00A70264 /* Agendamento.storyboard in Resources */,
 				BAD6E2BB2308AE8900A70264 /* Perfil.storyboard in Resources */,
 				155BE21B228060D200A0DC20 /* Assets.xcassets in Resources */,
 				155BE219228060D100A0DC20 /* Main.storyboard in Resources */,
