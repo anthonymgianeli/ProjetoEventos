@@ -13,6 +13,8 @@ class AssistirTableViewController: UITableViewController {
     var areas = ["Recursos Humanos","Desenvolvimento","Gestão","Financeiro","Marketing","Design","Institucional","Administrativo"]
     var areasFiltered = ["Recursos Humanos","Desenvolvimento","Gestão","Financeiro","Marketing","Design","Institucional","Administrativo"]
     
+    var sections = "Categorias"
+    
     let searchController = UISearchController(searchResultsController: nil)
     var searching = false
     
@@ -28,6 +30,10 @@ class AssistirTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sections
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
