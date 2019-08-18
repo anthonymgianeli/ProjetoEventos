@@ -33,6 +33,7 @@
 		B695BE71DE357BAC2999FFBE /* Pods_NavigationAulaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2958BBF845AB92A121C784B8 /* Pods_NavigationAulaUITests.framework */; };
 		BA2D3FF5230962E20012CC6C /* AssistirDetalheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2D3FF4230962E20012CC6C /* AssistirDetalheViewController.swift */; };
 		BA2D3FF723096E200012CC6C /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2D3FF623096E200012CC6C /* VideoViewController.swift */; };
+		BA2D3FF9230989AE0012CC6C /* 1 - Tutorial Clockify.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BA2D3FF8230989AE0012CC6C /* 1 - Tutorial Clockify.mp4 */; };
 		BAD6E2BB2308AE8900A70264 /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD6E2BA2308AE8900A70264 /* Perfil.storyboard */; };
 		BAD6E2BD2308B57800A70264 /* MentorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD6E2BC2308B57800A70264 /* MentorViewController.swift */; };
 		BAD6E2C12308C60000A70264 /* MentorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD6E2C02308C60000A70264 /* MentorTableViewCell.swift */; };
@@ -97,6 +98,7 @@
 		AD6624D48804F299C285A556 /* Pods_NavigationAula.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavigationAula.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA2D3FF4230962E20012CC6C /* AssistirDetalheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistirDetalheViewController.swift; sourceTree = "<group>"; };
 		BA2D3FF623096E200012CC6C /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		BA2D3FF8230989AE0012CC6C /* 1 - Tutorial Clockify.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1 - Tutorial Clockify.mp4"; sourceTree = "<group>"; };
 		BAD6E2BA2308AE8900A70264 /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
 		BAD6E2BC2308B57800A70264 /* MentorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorViewController.swift; sourceTree = "<group>"; };
 		BAD6E2C02308C60000A70264 /* MentorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorTableViewCell.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		155BE207228060D100A0DC20 = {
 			isa = PBXGroup;
 			children = (
+				BA2D3FF8230989AE0012CC6C /* 1 - Tutorial Clockify.mp4 */,
 				155BE212228060D100A0DC20 /* NavigationAula */,
 				155BE227228060D200A0DC20 /* NavigationAulaTests */,
 				155BE232228060D300A0DC20 /* NavigationAulaUITests */,
@@ -369,6 +372,7 @@
 				BAD6E2C32308E7BE00A70264 /* Assistir.storyboard in Resources */,
 				BAD6E2BB2308AE8900A70264 /* Perfil.storyboard in Resources */,
 				155BE21B228060D200A0DC20 /* Assets.xcassets in Resources */,
+				BA2D3FF9230989AE0012CC6C /* 1 - Tutorial Clockify.mp4 in Resources */,
 				155BE219228060D100A0DC20 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -693,7 +697,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9KU377264X;
+				DEVELOPMENT_TEAM = NQW9RC6R9A;
 				INFOPLIST_FILE = NavigationAula/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -712,7 +716,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9KU377264X;
+				DEVELOPMENT_TEAM = NQW9RC6R9A;
 				INFOPLIST_FILE = NavigationAula/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

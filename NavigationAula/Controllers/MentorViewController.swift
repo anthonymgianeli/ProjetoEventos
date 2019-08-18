@@ -14,7 +14,7 @@ class MentorViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     
-    var courses = ["Desenvolvimento", "Sistema Interno", "Financeiro", "Relacionamento Interpessoal"]
+    var courses = ["Desenvolvimento", "Sistema Interno", "Financeiro", "Design Gráfico"]
     
     var people    = ["Por João Victor", "Por Arthur", "Por Anthony", "Por Kewin"]
     

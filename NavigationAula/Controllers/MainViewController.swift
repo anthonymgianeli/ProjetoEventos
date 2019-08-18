@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 import Foundation
 
 class MainViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate {
@@ -218,15 +220,21 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
             }
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    private func playVideo() {
+        guard let path = Bundle.main.path(forResource: "1 - Tutorial Clockify", ofType:"mp4") else {
+            debugPrint("1 - Tutorial Clockify.mp4")
+            return
+        }
+        let player = AVPlayer(url: URL(fileURLWithPath: path))
+        let playerController = AVPlayerViewController()
+        playerController.player = player
+        present(playerController, animated: true) {
+            player.play()
+        }
     }
-    */
 
+    
+    
+    
 }
