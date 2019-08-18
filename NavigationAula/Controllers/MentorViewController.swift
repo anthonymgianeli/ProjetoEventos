@@ -22,7 +22,7 @@ class MentorViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var play = UIImage(named: "play-button-2")
     var completed = UIImage(named: "Grupo 173")
     
-    var thumbs = [UIImage(named: ""),UIImage(named: ""),UIImage(named: ""),UIImage(named: "")]
+    var thumbs = [UIImage(named: "Fotolia_120871392_Subscription_Monthly_XXL"),UIImage(named: "Fotolia_120871495_Subscription_Monthly_XXL"),UIImage(named: "Fotolia_120890120_Subscription_Monthly_XL"),UIImage(named: "Fotolia_120890380_Subscription_Monthly_XXL")]
     
     override func viewDidLoad() {
         super.viewDidLoad()

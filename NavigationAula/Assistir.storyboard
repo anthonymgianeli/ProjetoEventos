@@ -9,10 +9,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="IVU-uu-9Hu">
             <objects>
                 <navigationController restorationIdentifier="Assistir" storyboardIdentifier="Assistir" id="c9s-eT-MWe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="Polígono 2" selectedImage="Polígono 2" id="No4-dQ-SN1">
+                        <color key="badgeColor" red="0.29803921570000003" green="0.1058823529" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="lJz-qg-lQr">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -72,6 +76,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Polígono 2" width="23" height="25"/>
         <image name="seta" width="20" height="20"/>
     </resources>
 </document>

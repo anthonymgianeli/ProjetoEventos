@@ -493,7 +493,7 @@
                                 <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxz-Hd-gIe">
-                                <rect key="frame" x="120" y="798" width="174" height="54"/>
+                                <rect key="frame" x="120" y="749" width="174" height="54"/>
                                 <color key="backgroundColor" red="0.19886490702629089" green="0.59706485271453857" blue="0.7845466136932373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Comprar">
@@ -583,7 +583,7 @@
                         <color key="selectedImageTintColor" red="0.29803921568627451" green="0.10588235294117647" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
-                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="value" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBar>
@@ -593,6 +593,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <segue destination="nuL-65-X7G" kind="relationship" relationship="viewControllers" id="qBg-UX-eKW"/>
                         <segue destination="sun-sg-MpZ" kind="relationship" relationship="viewControllers" id="jzO-99-ziB"/>
                         <segue destination="4bN-a6-sh2" kind="relationship" relationship="viewControllers" id="vcn-Ni-eX8"/>
                         <segue destination="76I-dL-bI7" kind="relationship" relationship="viewControllers" id="qNg-0l-duU"/>
@@ -613,10 +614,14 @@
             </objects>
             <point key="canvasLocation" x="-998" y="190"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Home-->
         <scene sceneID="f7F-2V-lsY">
             <objects>
                 <navigationController id="nuL-65-X7G" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="Caminho 337" selectedImage="Caminho 337" id="3JU-mX-GbK">
+                        <color key="badgeColor" red="0.29803921570000003" green="0.1058823529" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="M9s-Ym-TUd">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -633,7 +638,10 @@
         <scene sceneID="Pex-Yl-y12">
             <objects>
                 <navigationController id="76I-dL-bI7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="LQr-Sz-Tfx"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="Grupo 194" selectedImage="Grupo 194" id="BIA-oF-GHX">
+                        <color key="badgeColor" red="0.29803921570000003" green="0.1058823529" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="5YI-t4-zDq">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -668,6 +676,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Caminho 337" width="38" height="19"/>
+        <image name="Grupo 194" width="25" height="17"/>
         <image name="background" width="207" height="448"/>
     </resources>
     <inferredMetricsTieBreakers>
