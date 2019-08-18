@@ -49,7 +49,7 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         //Titles
-        words.append("Desfile em SP")
+        words.append("Treinamento")
         words.append("Festa da unicamp")
         words.append("Stand up dos 4 amigos")
         words.append("Mega Balada do Seculo")
@@ -63,21 +63,31 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
         descricoes.append("Venha participar de um dos maiores encontros de carros antigos da região.")
         
         //images
-        if let imagem = UIImage(named: "imagem1"){
+        if let imagem = UIImage(named: "Fotolia_120871392_Subscription_Monthly_XXL"){
             imagens.append(imagem)
         }
-        if let imagem = UIImage(named: "imagem2"){
+        if let imagem = UIImage(named: "Fotolia_120871495_Subscription_Monthly_XXL"){
             imagens.append(imagem)
         }
-        if let imagem = UIImage(named: "imagem3"){
+        if let imagem = UIImage(named: "Fotolia_120890120_Subscription_Monthly_XL"){
             imagens.append(imagem)
         }
-        if let imagem = UIImage(named: "imagem4"){
+        if let imagem = UIImage(named: "Fotolia_120890380_Subscription_Monthly_XXL"){
             imagens.append(imagem)
         }
-        if let imagem = UIImage(named: "imagem5"){
+        if let imagem = UIImage(named: "Fotolia_120890426_Subscription_Monthly_XXL"){
             imagens.append(imagem)
         }
+        if let imagem = UIImage(named: "Fotolia_220554851_Subscription_Monthly_XL"){
+            imagens.append(imagem)
+        }
+        if let imagem = UIImage(named: "Fotolia_220558115_Subscription_Monthly_XL"){
+            imagens.append(imagem)
+        }
+        if let imagem = UIImage(named: "Fotolia_220763802_Subscription_Monthly_XXL"){
+            imagens.append(imagem)
+        }
+        
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -95,21 +105,21 @@ class MainViewController: BaseViewController, UITableViewDataSource, UITableView
         
         button = UIButton(type: .custom)
         button.frame = frame
-        button.setBackgroundImage(UIImage(named: "imagem1"), for: .normal)
+        button.setBackgroundImage(UIImage(named: "Fotolia_120871392_Subscription_Monthly_XXL"), for: .normal)
         button.addTarget(self, action: #selector(button1Tapped), for: .touchUpInside)
         
         scrollView.addSubview(button)
         
         button2 = UIButton(type: .custom)
         button2.frame = frame.offsetBy(dx: size.width, dy: 0)
-        button2.setBackgroundImage(UIImage(named: "imagem2"), for: .normal)
+        button2.setBackgroundImage(UIImage(named: "Fotolia_120871495_Subscription_Monthly_XXL"), for: .normal)
         button2.addTarget(self, action: #selector(self.button2Tapped(_:)), for: .touchUpInside)
         
         scrollView.addSubview(button2)
         
         button3 = UIButton(type: .custom)
         button3.frame = frame.offsetBy(dx: size.width * 2, dy: 0)
-        button3.setBackgroundImage(UIImage(named: "imagem3"), for: .normal)
+        button3.setBackgroundImage(UIImage(named: "Fotolia_120890120_Subscription_Monthly_XL"), for: .normal)
         button3.addTarget(self, action: #selector(self.button3Tapped(_:)), for: .touchUpInside)
         
         scrollView.addSubview(button3)
