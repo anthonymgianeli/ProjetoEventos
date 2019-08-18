@@ -22,6 +22,8 @@
 		3646078223092A900072A76C /* Presenciais.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3646078123092A900072A76C /* Presenciais.storyboard */; };
 		3646078623092C320072A76C /* PresenciaisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646078523092C320072A76C /* PresenciaisViewController.swift */; };
 		36460788230931E40072A76C /* PresencialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36460787230931E40072A76C /* PresencialTableViewCell.swift */; };
+		3646078E23097AB40072A76C /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646078D23097AB40072A76C /* DetailTableViewCell.swift */; };
+		3646079023097ACD0072A76C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646078F23097ACD0072A76C /* DetailViewController.swift */; };
 		3C715D092284B048005713EA /* CellEventos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C715D082284B048005713EA /* CellEventos.swift */; };
 		3C715D102285219B005713EA /* CompraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C715D0F2285219B005713EA /* CompraViewController.swift */; };
 		3CEF49792283586800AAE249 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF49782283586800AAE249 /* GoogleService-Info.plist */; };
@@ -78,6 +80,8 @@
 		3646078123092A900072A76C /* Presenciais.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Presenciais.storyboard; sourceTree = "<group>"; };
 		3646078523092C320072A76C /* PresenciaisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenciaisViewController.swift; sourceTree = "<group>"; };
 		36460787230931E40072A76C /* PresencialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresencialTableViewCell.swift; sourceTree = "<group>"; };
+		3646078D23097AB40072A76C /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		3646078F23097ACD0072A76C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		36BD3EAAA3D8FC63A294317D /* Pods-NavigationAulaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationAulaUITests.release.xcconfig"; path = "Target Support Files/Pods-NavigationAulaUITests/Pods-NavigationAulaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		38C1542EE6B79F3053A5E9E6 /* Pods_NavigationAulaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavigationAulaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C715D082284B048005713EA /* CellEventos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellEventos.swift; sourceTree = "<group>"; };
@@ -213,6 +217,8 @@
 				3646078523092C320072A76C /* PresenciaisViewController.swift */,
 				36460787230931E40072A76C /* PresencialTableViewCell.swift */,
 				BA2D3FF623096E200012CC6C /* VideoViewController.swift */,
+				3646078D23097AB40072A76C /* DetailTableViewCell.swift */,
+				3646078F23097ACD0072A76C /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -506,6 +512,7 @@
 				364607762308D9A10072A76C /* PerfilTableViewCell.swift in Sources */,
 				3CEF497B2283615900AAE249 /* LoginViewController.swift in Sources */,
 				155BE24622806C5800A0DC20 /* MainViewController.swift in Sources */,
+				3646079023097ACD0072A76C /* DetailViewController.swift in Sources */,
 				BA2D3FF5230962E20012CC6C /* AssistirDetalheViewController.swift in Sources */,
 				BAD6E2BD2308B57800A70264 /* MentorViewController.swift in Sources */,
 				155BE214228060D100A0DC20 /* AppDelegate.swift in Sources */,
@@ -517,6 +524,7 @@
 				3646078623092C320072A76C /* PresenciaisViewController.swift in Sources */,
 				3CEF497D2283716300AAE249 /* CadastroViewController.swift in Sources */,
 				155BE24C2280791D00A0DC20 /* DetalhesEventosViewController.swift in Sources */,
+				3646078E23097AB40072A76C /* DetailTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
