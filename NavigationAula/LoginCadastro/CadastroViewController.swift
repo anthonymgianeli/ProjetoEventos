@@ -46,25 +46,13 @@ class CadastroViewController: BaseViewController {
         }
     }
 
-func post (){
-    let title = "firebase"
-    let subtitle = "ola"
-
-    let post :[String: AnyObject] = ["title" : title as AnyObject, "subtitle" : subtitle as AnyObject]
-
-    let dbReference = Database.database().reference()
-    dbReference.child("Posts").childByAutoId().setValue(post)
-}
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func post (){
+        let title = "firebase"
+        let subtitle = "ola"
+        
+        let post :[String: AnyObject] = ["title" : title as AnyObject, "subtitle" : subtitle as AnyObject]
+        
+        let dbReference = Database.database().reference()
+        dbReference.child("Posts").childByAutoId().setValue(post)
     }
-    */
-
 }

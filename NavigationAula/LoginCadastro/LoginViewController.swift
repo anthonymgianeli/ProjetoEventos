@@ -9,25 +9,30 @@
 import UIKit
 import FirebaseAuth
 
-class LoginViewController: BaseViewController {
+class LoginViewController: BaseViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signButton: UIButton!
     @IBOutlet weak var signSelector: UISegmentedControl!
-    
+    @IBOutlet weak var scrollView: UIScrollView!
     
     var isSignIn:Bool = true
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         //self.hideKeyboardWhenTappedAround()
+        passwordTextField.delegate = self
+        emailTextField.delegate = self
+        setupKeyboardNotification()
         
         // Do any additional setup after loading the view.
-        signButton.layer.cornerRadius = 20
+        signButton.layer.cornerRadius = 5
         signButton.clipsToBounds = true
+        
+        emailTextField.endEditing(true)
+        passwordTextField.endEditing(true)
     }
     
     @IBAction func signInSelectorChanged(_ sender: UISegmentedControl) {
@@ -78,15 +83,33 @@ class LoginViewController: BaseViewController {
             }
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func setupKeyboardNotification(){
+        NotificationCenter.default.addObserver(self, selector: #selector(resizeTableView), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(resizeTableView), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        
     }
-    */
-
+    
+    
+    @objc func resizeTableView(_ notification: Notification) {
+        guard let keyboardValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else { return }
+        
+        let keyboardRect = keyboardValue.cgRectValue
+        let keyboardRectInSuperView = scrollView.convert(keyboardRect, from: view.window)
+        
+        if notification.name == UIResponder.keyboardWillHideNotification {
+            scrollView.contentInset = .zero
+        }
+        else {
+            scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardRectInSuperView.height - view.safeAreaInsets.bottom, right: 0)
+            scrollView.contentOffset = CGPoint(x: 0, y:  keyboardRectInSuperView.height - view.safeAreaInsets.bottom)
+        }
+        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
+    }
 }
